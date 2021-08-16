@@ -1,0 +1,116 @@
+.header{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 12px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--white-color);
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-logo{
+    max-width: 120px;
+}
+.header-nav{
+    margin-left: auto;
+
+}
+.header-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    font-size: 1.4rem;
+}
+.header-nav-item{
+    position: relative;
+    margin-right: 35px;
+
+}
+.header-nav-item:before{
+    content: "";
+    width: 60%;
+    height: 7px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+
+    opacity: 0
+}
+.header-nav-item-link{
+    display: block;
+    height: 100%;
+    color: var(--text-color);
+    padding: 25px 0;
+
+}
+.header-nav-item:hover .header-nav-item-link{
+    color: var(--primary-color);
+}
+.header-nav-item:hover:before{
+    top: 5%;
+    opacity: 1;
+}
+
+.header-language{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.header-btn-lang{
+    width: 35px;
+    height: 22px;
+    display: flex;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.header-btn-vi{
+
+}
+.header-btn-text{
+    display: inline-block;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.header-btn-lang-toggle{
+    border-radius: 3px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* .header-nav-item--active{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 7px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.header-nav-item--active .header-nav-item-link{
+    color: var(--primary-color);
+}
+
+.video{
+    margin-bottom: 30px;
+}
+
+.video video{
+    margin-top: 70px;
+    width: 100%;
+}
